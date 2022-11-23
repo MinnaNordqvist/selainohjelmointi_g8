@@ -5,7 +5,7 @@ import {AddFuel} from "./AddFuel"
 function App() {
   return (
     <div>
-      <h1>Car fuel expences</h1>
+      <h1>Car fuel expenses</h1>
     
      <div className="container">
      <AddFuel />

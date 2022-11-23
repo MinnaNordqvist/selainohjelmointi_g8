@@ -12,10 +12,8 @@ function App() {
      <AddFuel />
      </div>
      <div className="historia">
-      <Tankkaushistoria />
+     <Tankkaushistoria />
      </div>
-    
-    
     </div>
   );
 }

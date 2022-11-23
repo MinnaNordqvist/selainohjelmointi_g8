@@ -5,7 +5,7 @@ export const Tankkaushistoria = () => {
     <div>
      <h3>Refueling history</h3>   
         <ul id="list">
-        <li>Tankkaus</li>
+        <li>Tankkauskerta</li>
         </ul>
     </div>
   )

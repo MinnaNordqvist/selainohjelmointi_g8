@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css"
 import {AddFuel} from "./AddFuel"
+import {Tankkaushistoria} from "./Tankkaushistoria"
 
 function App() {
   return (
@@ -10,7 +11,9 @@ function App() {
      <div className="container">
      <AddFuel />
      </div>
-     
+     <div className="historia">
+      <Tankkaushistoria />
+     </div>
     
     
     </div>

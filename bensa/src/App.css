@@ -4,20 +4,15 @@
 
 body {
   background-color: #f7f7f7;
-  display: grid;
   align-items: center;
   justify-content: center;
+  text-align: center;
   min-height: 100vh;
   margin: 0;
 } 
 .container{
   display: grid;
-  grid-row: 1;
-  padding: 5%
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 } 
-.historia{
-  display: grid;
-  grid-column: 3;
-  grid-row: 4;
-  padding: 5%;
-}
+

@@ -1,11 +1,17 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import { GlobalContext } from './GlobalState'
+import {Transaction} from "./Transaction"
 
-export const Tankkaushistoria = () => {
+
+export function Tankkaushistoria()  {
+  const {tankkaukset} = useContext(GlobalContext);
+ 
   return (
     <div>
      <h3>Refueling history</h3>   
-        <ul id="list">
-        <li>Tankkauskerta</li>
+        <ul>
+         {tankkaukset.map(tankkaus =>(<Transaction key={tankkaus.id} transaction={tankkaus}/>))} 
+        
         </ul>
     </div>
   )

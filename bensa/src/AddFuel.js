@@ -5,10 +5,10 @@ import { GlobalContext } from './GlobalState';
 var num = 1;
 
 export const AddFuel = () => {
-  const [text, setText] = useState("");
-  const[litrat, setLitra] = useState(0);
-  const[hinta, setHinta] = useState(0);
-  const[km, setKm] = useState(0);
+  var [text, setText] = useState("");
+  var[litrat, setLitra] = useState(0);
+  var[hinta, setHinta] = useState(0);
+  var[km, setKm] = useState(0);
   const{addTransaction} = useContext(GlobalContext);
   
   const onSubmit = e => {
@@ -22,6 +22,10 @@ export const AddFuel = () => {
     }
     addTransaction(uusiTankkaus);
     num = num +1;
+    setText("");
+    setLitra(0);
+    setHinta(0);
+    setKm(0);
   }
     return (
     <div>

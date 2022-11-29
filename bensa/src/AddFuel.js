@@ -16,9 +16,9 @@ export const AddFuel = () => {
     const uusiTankkaus = {
       id: num,
       text,
-      litrat,
-      hinta,
-      km
+      litrat: +litrat,
+      hinta: +hinta,
+      km: +km
     }
     addTransaction(uusiTankkaus);
     num = num +1;

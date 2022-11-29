@@ -3,6 +3,7 @@ import "./App.css"
 import {AddFuel} from "./AddFuel"
 import {Tankkaushistoria} from "./Tankkaushistoria"
 import {GlobalProvider} from "./GlobalState";
+import {EkaLasku} from "./EkaLasku";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
    <div className="container">
    <AddFuel />
    <Tankkaushistoria/>
+   <EkaLasku />
    </div>
    
    

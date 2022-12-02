@@ -10,9 +10,34 @@ body {
   min-height: 100vh;
   margin: 0;
 } 
+
+/*App.js */
 .container{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 } 
 
+/*Otsikot */
+h1 {
+
+}
+
+h3 {
+
+}
+
+/*Listat */
+ol, ul { 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}  
+
+/*Lomake*/
+input[type="text"]{
+
+}
+input[type="number"]{
+  
+}

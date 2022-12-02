@@ -4,6 +4,7 @@ import {AddFuel} from "./AddFuel"
 import {Tankkaushistoria} from "./Tankkaushistoria"
 import {GlobalProvider} from "./GlobalState";
 import {EkaLasku} from "./EkaLasku";
+import {TokaLasku} from "./TokaLasku";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
    <AddFuel />
    <Tankkaushistoria/>
    <EkaLasku />
+   <TokaLasku />
    </div>
    
    

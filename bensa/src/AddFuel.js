@@ -45,7 +45,7 @@ export const AddFuel = () => {
     <br />
     <label>Tankatun auton nimi</label>
     <br />
-    <input type="text" value={text} onChange={(e) => setText(e.target.value)} placeholder="nimi"/>   
+    <input type="text" value={text} onChange={(e) => setText(e.target.value)} placeholder="Nimi"/>   
     <br />
     <button>Add Refueling Expense</button> 
     </form>   

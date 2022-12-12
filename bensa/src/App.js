@@ -11,12 +11,20 @@ function App() {
     <GlobalProvider>
     <h1>Car fuel expences</h1>
   
-   <div className="container">
-   <AddFuel />
-   <Tankkaushistoria/>
-   <EkaLasku />
-   <TokaLasku />
-   </div>
+  <div className="container">
+    <div className="content1">
+      <AddFuel/>
+    </div>
+    <div className="content2">
+      <Tankkaushistoria/>
+    </div>
+    <div className="content3">
+      <EkaLasku />
+    </div>
+    <div className="content4">
+      <TokaLasku/>
+    </div>
+  </div>
    
    
    

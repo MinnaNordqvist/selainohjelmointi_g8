@@ -1,30 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
   box-sizing: border-box;
 }
 
 body {
-  background-color: #f7f7f7;
+  background-color: #373C4A;
   align-items: center;
   justify-content: center;
   text-align: center;
   min-height: 100vh;
   margin: 0;
+  font-family: montserrat;
+  font-size: 2vh;
+  overflow: hidden;
 } 
 
 /*App.js */
-.container{
+.container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-rows: 43vh 43vh;
+  grid-template-areas:
+    "content1 content2"
+    "content3 content4";
 } 
+
+.content1 {
+  border: 3px solid black;
+  background-color: #bac1d4;
+}
+.content2 {
+  border: 3px solid black;
+  background-color: #bac1d4;
+}
+.content3 {
+  border: 3px solid black;
+  background-color: #bac1d4;
+}
+.content4 {
+  border: 3px solid black;
+  background-color: #bac1d4;
+}
 
 /*Otsikot */
 h1 {
-
+  color: white;
+  background-color: #1E212B;
+  font-size: 4vh;
+  padding: 5px;
 }
 
 h3 {
-
+  padding: 0;
 }
 
 /*Listat */
@@ -35,9 +63,44 @@ ol, ul {
 }  
 
 /*Lomake*/
-input[type="text"]{
-
+input[type="text"] {
+  width: 50%;
+  padding: 8px 15px;
+  margin: 4px 0;
+  border: 1px solid gray;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 15px;
+  background-color: #e6e9ed;
 }
-input[type="number"]{
-  
+input[type="number"] {
+  width: 50%;
+  padding: 8px 15px;
+  margin: 4px 0;
+  border: 1px solid gray;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 15px;
+  background-color: #e6e9ed;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+button {
+  width: 50%;
+  background-color: #218530;
+  color: white;
+  padding: 8px 15px;
+  margin: 4px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #1a6e27;
 }

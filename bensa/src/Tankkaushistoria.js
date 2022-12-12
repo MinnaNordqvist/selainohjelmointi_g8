@@ -10,7 +10,7 @@ export function Tankkaushistoria()  {
     <div>
      <h3>Refueling history</h3>   
         <ul>
-         {tankkaukset.map(tankkaus =>(<Transaction key={tankkaus.id} transaction={tankkaus}/>))} 
+         {[...tankkaukset].reverse().map(tankkaus =>(<Transaction key={tankkaus.id} transaction={tankkaus}/>))} 
         
         </ul>
     </div>

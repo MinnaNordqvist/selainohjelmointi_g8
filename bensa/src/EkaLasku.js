@@ -6,12 +6,9 @@ export const EkaLasku = () => {
     var eurotPerLitra = 0;
     var eurotPerKm = 0;
     const {tankkaukset} = useContext(GlobalContext);
-    var litrat = tankkaukset.map(tankki => tankki.litrat);
-    var summaLitrat = litrat.reduce((acc, item) => (acc += item), 0);
-    var km = tankkaukset.map(tankki =>tankki.km);
-    var summaKm = km.reduce((acc, item) => (acc += item), 0); 
-    var hinnat = tankkaukset.map(tankki => tankki.hinta);
-    var summaEurot = hinnat.reduce((acc, item) => (acc += item), 0);
+    var summaLitrat = tankkaukset.map(tankki => tankki.litrat).reduce((acc, item) => (acc += item), 0);
+    var summaKm = tankkaukset.map(tankki =>tankki.km).reduce((acc, item) => (acc += item), 0);  
+    var summaEurot = tankkaukset.map(tankki => tankki.hinta).reduce((acc, item) => (acc += item), 0);
     litratPerKm = (100 * summaLitrat/summaKm).toFixed(2);  
     eurotPerLitra = (summaEurot/summaLitrat).toFixed(2);
     eurotPerKm = (litratPerKm * eurotPerLitra).toFixed(2);

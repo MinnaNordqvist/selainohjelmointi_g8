@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from 'react'
+import React, {useContext} from 'react'
 import { GlobalContext } from './GlobalState'
 
 
@@ -31,7 +31,6 @@ export const TokaLasku = () => {
     };
 
     var palauta = lasketaan(avaimet, arvot);
-    console.log(palauta);
     
     return (
     <div>

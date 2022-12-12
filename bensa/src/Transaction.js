@@ -4,7 +4,7 @@ export const Transaction = ({transaction}) => {
   
     return (
     <li className="tankkaus">
-        Auton nimi: {transaction.text}  Maksoi: {transaction.hinta}€ 
+        {transaction.id}. Auton nimi: {transaction.text}  Maksoi: {transaction.hinta}€ 
         Litrat: {transaction.litrat} Kilometrit: {transaction.km} 
         </li>
   )

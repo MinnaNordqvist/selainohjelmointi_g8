@@ -1,11 +1,23 @@
 import React from 'react'
 
 export const Transaction = ({transaction}) => {
-  
-    return (
-    <li className="tankkaus">
-        {transaction.id}. Auton nimi: {transaction.text}  Maksoi: {transaction.hinta}€ 
+  var palauta = "";
+  if(transaction.kwh === 0){
+    palauta = <li className="tankkaus">
+        {transaction.id}. ⛽Auton nimi: {transaction.text}⛽  Maksoi: {transaction.hinta}€ 
         Litrat: {transaction.litrat} Kilometrit: {transaction.km} 
-        </li>
+    </li>;     
+  } 
+  if(transaction.litrat ===0){
+    palauta = <li className="lataus">
+    {transaction.id}.⚡Auton nimi: {transaction.text}⚡ Maksoi: {transaction.hinta}€ 
+    kWh: {transaction.kwh} Kilometrit: {transaction.km} 
+    </li>;   
+  }   
+  
+  return (
+   <>
+   {palauta} 
+   </> 
   )
 }

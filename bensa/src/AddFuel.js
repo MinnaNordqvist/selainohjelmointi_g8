@@ -13,7 +13,6 @@ export const AddFuel = () => {
   const{addTransaction} = useContext(GlobalContext);
 
   const choose = (event) =>{
-    event.preventDefault();
     valitseTyyppi(event.target.value);
   };
   const [validated, setValidated] = useState(false);

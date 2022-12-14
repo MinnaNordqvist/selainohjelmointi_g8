@@ -16,12 +16,12 @@ function App() {
       <AddFuel/>
     </div>
     <div className="content2">
-      <Tankkaushistoria/>
-    </div>
-    <div className="content3">
       <EkaLasku />
     </div>
-    <div className="content4">
+    <div className="content3" id="scrollableContent">
+      <Tankkaushistoria/>
+    </div>
+    <div className="content4" id="scrollableContent">
       <TokaLasku/>
     </div>
   </div>

@@ -28,8 +28,8 @@ export const EkaLasku = () => {
    
     return ( 
     <div>
-    <h3>Total refueling expenses over all cars</h3>    
-    <b>Total sum: {summaEurot} € </b> <br /> 
+      <h3>Total refueling expenses over all cars</h3>    
+      <b>Total sum: {summaEurot} € </b> <br /> 
       <b>Total distance {summaKm} kilometres</b> <br />
       ⛽Total sum: {summaEurotBensa} € <br/>
       ⛽Total distance {summaKmBensa} kilometres <br/>

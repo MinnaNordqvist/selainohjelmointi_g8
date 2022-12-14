@@ -45,6 +45,10 @@ export const AddFuel = () => {
     <input type="radio" checked={tyyppi === "kwh"} value="kwh" label="kwh" onChange={choose}/>Electric
     </div>  
     <br/>
+    <label>Car Name</label>
+    <br />
+    <input type="text"  value={text} onChange={(e) => setText(e.target.value)} placeholder="Name"/>   
+    <br />
     {tyyppi === "litrat" && (
     <><label htmlFor='litrat'>Amount of Fuel in Liters</label><br 
     /><input type="number" required min = "1" value={litrat} onChange={(e) => setLitra(e.target.value)} placeholder="Liters" /></>
@@ -62,10 +66,6 @@ export const AddFuel = () => {
     <label>Distance Driven in Kilometers</label>
     <br />
     <input type="number" required min = "1" value={km} onChange={(e) => setKm(e.target.value)} placeholder="KM" />
-    <br />
-    <label>Car Name</label>
-    <br />
-    <input type="text"  value={text} onChange={(e) => setText(e.target.value)} placeholder="Name"/>   
     <br />
     <button>Add Refueling Expense</button> 
     </form>   

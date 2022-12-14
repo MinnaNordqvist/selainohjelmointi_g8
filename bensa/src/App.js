@@ -9,7 +9,7 @@ import {TokaLasku} from "./TokaLasku";
 function App() {
   return (
     <GlobalProvider>
-    <h1>Car fuel expences</h1>
+    <h1>Car Fuel Expense Calculator</h1>
   
   <div className="container">
     <div className="content1">

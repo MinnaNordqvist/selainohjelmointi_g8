@@ -16,7 +16,7 @@ export const AddFuel = () => {
     event.preventDefault();
     valitseTyyppi(event.target.value);
   };
-  
+  const [validated, setValidated] = useState(false);
   const onSubmit = e => {
     e.preventDefault();
     const uusiTankkaus = {
@@ -37,32 +37,36 @@ export const AddFuel = () => {
   }
     return (
     <div>
-    <h3>Tankkauskerta</h3>
+    <h3>Refuel/Charging Session</h3>
     <form onSubmit={onSubmit}>
     <div className="radio">
-    <label>Bensa vai sähkö?</label>
-    <input type="radio" checked={tyyppi === "litrat"} value="litrat" label="litrat" onChange={choose}/>bensa 
-    <input type="radio" checked={tyyppi === "kwh"} value="kwh" label="kwh" onChange={choose}/>sähkö
+    <label>Petrol or Electric?</label>
+    
+    <input type="radio" checked={tyyppi === "litrat"} value="litrat" label="litrat" onChange={choose}/>Petrol
+    <input type="radio" checked={tyyppi === "kwh"} value="kwh" label="kwh" onChange={choose}/>Electric
     </div>  
     <br/>
     {tyyppi === "litrat" && (
-    <><label htmlFor='litrat'>Kuinka monta litraa tankattiin?</label><br /><input type="number" value={litrat} onChange={(e) => setLitra(e.target.value)} placeholder="litrat" /></>
+    <><label htmlFor='litrat'>Amount of Fuel in Liters</label><br 
+    /><input type="number" required min = "1" value={litrat} onChange={(e) => setLitra(e.target.value)} placeholder="Liters" /></>
     )}
     {tyyppi === "kwh" && (
-    <><label htmlFor='kwh'>Kuinka monta kilowattituntia ladattiin?</label><br /><input type="number" value={kwh} onChange={(e) => setSahko(e.target.value)} placeholder="kwh" /></>
+    <><label htmlFor='kwh'>Kilowatt-hours Charged</label>
+    <br />
+    <input type="number" required min = "1" value={kwh} onChange={(e) => setSahko(e.target.value)} placeholder="kWh" /></>
     )}
     <br />
-    <label>Kuinka paljon maksoi?</label>
+    <label>Cost</label>
     <br />
-    <input type="number" value={hinta} onChange={(e) => setHinta(e.target.value)} placeholder ="hinta"/>
+    <input type="number" required min = "1" value={hinta} onChange={(e) => setHinta(e.target.value)} placeholder ="Cost in €"/>
     <br />
-    <label>Ajetut kilometrit</label>
+    <label>Distance Driven in Kilometers</label>
     <br />
-    <input type="number" value={km} onChange={(e) => setKm(e.target.value)} placeholder="km" />
+    <input type="number" required min = "1" value={km} onChange={(e) => setKm(e.target.value)} placeholder="KM" />
     <br />
-    <label>Tankatun auton nimi</label>
+    <label>Car Name</label>
     <br />
-    <input type="text" value={text} onChange={(e) => setText(e.target.value)} placeholder="Nimi"/>   
+    <input type="text"  value={text} onChange={(e) => setText(e.target.value)} placeholder="Name"/>   
     <br />
     <button>Add Refueling Expense</button> 
     </form>   

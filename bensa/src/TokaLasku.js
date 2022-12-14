@@ -28,7 +28,7 @@ export const TokaLasku = () => {
             litratPerKm = (100 * l/km).toFixed(2);
             eurotPerLitra = (hinnat/l).toFixed(2);
             eurotPerKm = (litratPerKm * eurotPerLitra).toFixed(2); 
-            ret.push(<li className='Summaus' key={nimet}>
+            ret.push(<li className='minus' key={nimet}>
              <b>⛽{nimet}⛽</b> Total Sum: {hinnat} €, Total distance: {km} km, <br/> 
              Total consumption: {l} litres, Average expences {eurotPerKm} € per 100km, <br/>
              Average consumption {litratPerKm} litres per 100km</li>); 
@@ -37,7 +37,7 @@ export const TokaLasku = () => {
             kwhPerKm=(100*kwht/km).toFixed(2);
             eurotPerKwh=(hinnat/kwht).toFixed(2);
             eurotPerKmSahko=(eurotPerKwh * kwhPerKm).toFixed(2);
-            ret.push(<li className='Summaus' key={nimet}>
+            ret.push(<li className='plus' key={nimet}>
             <b>⚡{nimet}⚡</b> Total Sum: {hinnat} €, Total distance: {km} km, <br/> 
             Total consumption: {kwht} kWh, Average expences {eurotPerKmSahko} € per 100km, <br/>
             Average consumption {kwhPerKm} kWh per 100km</li>); 
@@ -51,9 +51,10 @@ export const TokaLasku = () => {
     return (
     <div>
      <h3>Total refueling expenses by cars</h3>
-       <ul>
+     <ul id="list" className="list">
        {[...palauta].reverse()}
        </ul> 
+       
     </div>
   )
 }

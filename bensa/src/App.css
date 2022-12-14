@@ -2,6 +2,7 @@
 
 *{
   box-sizing: border-box;
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 body {
@@ -103,4 +104,27 @@ button {
 }
 button:hover {
   background-color: #1a6e27;
+}
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+.list li {
+  background-color: rgb(196, 216, 242);
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.list li.plus {
+  border-right: 5px solid #2ecc71;
+}
+
+.list li.minus {
+  border-right: 5px solid #c0392b;
 }

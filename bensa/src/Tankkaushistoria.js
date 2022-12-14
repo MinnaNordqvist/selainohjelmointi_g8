@@ -7,12 +7,11 @@ export function Tankkaushistoria()  {
   const {tankkaukset} = useContext(GlobalContext);
  
   return (
-    <div>
-     <h3>Refueling history</h3>   
-        <ul>
-         {[...tankkaukset].reverse().map(tankkaus =>(<Transaction key={tankkaus.id} transaction={tankkaus}/>))} 
-        
-        </ul>
-    </div>
-  )
+    <>
+      <h3>Refueling history</h3>   
+      <ul id="list" className="list">
+    {[...tankkaukset].reverse().map(tankkaus =>(<Transaction key={tankkaus.id} transaction={tankkaus}/>))} 
+  </ul>
+</>
+)
 }

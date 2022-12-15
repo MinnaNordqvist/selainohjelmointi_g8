@@ -47,7 +47,7 @@ export const AddFuel = () => {
     <br/>
     <label>Car Name</label>
     <br />
-    <input type="text"  value={text} onChange={(e) => setText(e.target.value)} placeholder="Name"/>   
+    <input type="text" required value={text} onChange={(e) => setText(e.target.value)} placeholder="Name"/>   
     <br />
     {tyyppi === "litrat" && (
     <><label htmlFor='litrat'>Amount of Fuel in Liters</label><br 

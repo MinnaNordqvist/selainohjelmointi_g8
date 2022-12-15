@@ -33,8 +33,8 @@ export const EkaLasku = () => {
       <b>Total distance {summaKm} kilometres</b> <br />
       ⛽Total sum: {summaEurotBensa} € <br/>
       ⛽Total distance {summaKmBensa} kilometres <br/>
-      ⛽Total consumption {summaLitrat} litres <br/>
-      ⛽Average consumption {litratPerKm} litres per 100km <br/>
+      ⛽Total consumption {summaLitrat} liters <br/>
+      ⛽Average consumption {litratPerKm} liters per 100km <br/>
       ⛽Average expenses {eurotPerKm} € per 100km <br/>
       ⚡Total sum: {summaEurotSahko} € <br />
       ⚡Total distance {summaKmSahko} kilometres <br />

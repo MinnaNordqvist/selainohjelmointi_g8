@@ -50,7 +50,7 @@ export const AddFuel = () => {
     <input type="text" required value={text} onChange={(e) => setText(e.target.value)} placeholder="Name"/>   
     <br />
     {tyyppi === "litrat" && (
-    <><label htmlFor='litrat'>Amount of Fuel in Liters</label><br 
+    <><label htmlFor='litrat'>Amount Refueled in Liters</label><br 
     /><input type="number" required min = "1" value={litrat} onChange={(e) => setLitra(e.target.value)} placeholder="Liters" /></>
     )}
     {tyyppi === "kwh" && (

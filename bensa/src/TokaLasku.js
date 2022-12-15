@@ -30,8 +30,8 @@ export const TokaLasku = () => {
             eurotPerKm = (litratPerKm * eurotPerLitra).toFixed(2); 
             ret.push(<li className='minus' key={nimet}>
              <b>⛽{nimet}⛽</b> Total Sum: {hinnat} €, Total distance: {km} km, <br/> 
-             Total consumption: {l} litres, Average expences {eurotPerKm} € per 100km, <br/>
-             Average consumption {litratPerKm} litres per 100km</li>); 
+             Total consumption: {l} liters, Average expences {eurotPerKm} € per 100km, <br/>
+             Average consumption {litratPerKm} liters per 100km</li>); 
           }
           if(kwht !==0){ 
             kwhPerKm=(100*kwht/km).toFixed(2);

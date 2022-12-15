@@ -5,7 +5,7 @@ export const Transaction = ({transaction}) => {
   if(transaction.kwh === 0){
     palauta = <li className="minus">
         {transaction.id}. ⛽Car Name : {transaction.text}⛽  Refuel Cost: {transaction.hinta}€ 
-        Litrat: {transaction.litrat} Kilometers: {transaction.km} 
+        Litres: {transaction.litrat} Kilometers: {transaction.km} 
     </li>;     
   } 
   if(transaction.litrat ===0){

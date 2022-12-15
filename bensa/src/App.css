@@ -56,6 +56,10 @@ h3 {
   padding: 0;
 }
 
+p{
+  text-align: left;
+  margin-left: 2%;
+}
 /*Listat */
 ol, ul { 
   list-style-type: none;

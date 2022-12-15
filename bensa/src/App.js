@@ -12,10 +12,10 @@ function App() {
     <h1>Car Fuel Expense Calculator</h1>
   
   <div className="container">
-    <div className="content1">
+    <div className="content1" id="scrollableContent">
       <AddFuel/>
     </div>
-    <div className="content2">
+    <div className="content2" id="scrollableContent">
       <EkaLasku />
     </div>
     <div className="content3" id="scrollableContent">
